@@ -68,7 +68,7 @@ class AnswerRequest(BaseModel):
 
 @app.get("/")
 async def home():
-    return {"message": "API FastAPI rodando no Azure 🚀"}
+    return {"message": "API FastAPI rodando no Azure"}
 
 @app.post("/classificar")
 async def classificar_pergunta(data: QueryRequest):
