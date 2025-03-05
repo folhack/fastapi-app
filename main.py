@@ -26,7 +26,7 @@ DB_PASSWORD = "ezc1826"
 
 def get_db_connection():
     conn = pyodbc.connect(
-        f"DRIVER={{SQL Server}};SERVER={DB_SERVER};DATABASE={DB_DATABASE};UID={DB_USERNAME};PWD={DB_PASSWORD}"
+        f"DRIVER={{ODBC Driver 17 for SQL Server}};SERVER={DB_SERVER};DATABASE={DB_DATABASE};UID={DB_USERNAME};PWD={DB_PASSWORD}"
     )
     return conn
 
